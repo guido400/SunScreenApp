@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+
+
+
+    <TextView android:layout_width="wrap_content"
+        android:id="@+id/text_output"
+        android:layout_height="wrap_content"
+        android:textSize="24dp"
+        android:text=" "
+        android:gravity="center"
+        android:layout_marginTop="7dp"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom">
+
+        <EditText android:id="@+id/loc_text"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Location"
+            android:singleLine="true"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/set_loc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@android:drawable/ic_media_play"
+                android:tint="@android:color/white"
+                android:layout_alignParentLeft="true"
+                android:text = "Set Location"
+                android:onClick="setLocation"/>
+
+            <Button
+                android:id="@+id/get_adv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@android:drawable/ic_input_add"
+                android:tint="@android:color/white"
+                android:layout_marginBottom="20dp"
+                android:layout_alignTop="@+id/set_loc"
+                android:layout_alignParentEnd="true"
+                android:text= "Get advice"
+                android:onClick="getAdvice"/>
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+
+
+
+
+</LinearLayout>
+
